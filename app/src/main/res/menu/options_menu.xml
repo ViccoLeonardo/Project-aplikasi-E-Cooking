@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/settingsFragment"
+        android:title="Pengaturan"
+        android:iconTint="@color/cardview_dark_background"
+        app:showAsAction="never"
+        android:orderInCategory="0"/>
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:iconTint="@color/cardview_dark_background"
+        android:title="Tentang Kami"
+        app:showAsAction="never" />
+</menu>

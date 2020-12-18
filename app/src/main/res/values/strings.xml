@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E-Cooking</string>
+    <string name="sync_title">Sinkronasi Resep</string>
+    <string name="attachment_title">Unduh Resep Baru Jika Tersedia</string>
+    <string name="attachment_summary_on">Otomatis Unduh Jika Tersedia
+    </string>
+    <string name="attachment_summary_off">Unduh Manual</string>
+</resources>

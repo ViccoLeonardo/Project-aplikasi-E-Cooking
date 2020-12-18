@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.e_cooking.HomeFragment"
+        android:label="Halaman Utama"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_resep1Fragment"
+            app:destination="@id/resep1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_resep2Fragment"
+            app:destination="@id/resep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_resep3Fragment"
+            app:destination="@id/resep3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_resep4Fragment"
+            app:destination="@id/resep4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_halaman2Fragment"
+            app:destination="@id/halaman2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android.e_cooking.SettingsFragment"
+        android:label="Pengaturan"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.android.e_cooking.AboutFragment"
+        android:label="Tentang Kami"
+        tools:layout="@layout/fragment_about" />
+    <action
+        android:id="@+id/action_global_aboutFragment"
+        app:destination="@id/aboutFragment"
+        app:enterAnim="@anim/slide_in_top"
+        app:exitAnim="@anim/slide_out_bottom"
+        app:popEnterAnim="@anim/slide_in_bottom"
+        app:popExitAnim="@anim/slide_out_top" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.android.e_cooking.SearchFragment"
+        android:label="Pencarian"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.android.e_cooking.FavoriteFragment"
+        android:label="Favorit"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep1Fragment"
+        android:name="com.android.e_cooking.Resep1Fragment"
+        android:label="Sempolet khas melayu"
+        tools:layout="@layout/fragment_resep1" >
+        <action
+            android:id="@+id/action_resep1Fragment_to_Langkah1Fragment"
+            app:destination="@id/Langkah1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah1Fragment"
+        android:name="com.android.e_cooking.Langkah1Fragment"
+        android:label="Sempolet khas melayu"
+        tools:layout="@layout/fragment_langkah1" />
+    <fragment
+        android:id="@+id/Langkah2Fragment"
+        android:name="com.android.e_cooking.Langkah2Fragment"
+        android:label="Asam Pedas Patin Khas Melayu Riau"
+        tools:layout="@layout/fragment_langkah2" />
+    <fragment
+        android:id="@+id/Langkah3Fragment"
+        android:name="com.android.e_cooking.Langkah3Fragment"
+        android:label="Mie Sagu Goreng"
+        tools:layout="@layout/fragment_langkah3" />
+    <fragment
+        android:id="@+id/Langkah4Fragment"
+        android:name="com.android.e_cooking.Langkah4Fragment"
+        android:label="Tempoyak Ikan Patin"
+        tools:layout="@layout/fragment_langkah4" />
+    <fragment
+        android:id="@+id/Langkah5Fragment"
+        android:name="com.android.e_cooking.Langkah5Fragment"
+        android:label="Pulut Durian Jadul Melayu"
+        tools:layout="@layout/fragment_langkah5" />
+    <fragment
+        android:id="@+id/Langkah7Fragment"
+        android:name="com.android.e_cooking.Langkah7Fragment"
+        android:label="Mie Lendir Khas Melayu"
+        tools:layout="@layout/fragment_langkah7" />
+    <fragment
+        android:id="@+id/Langkah8Fragment"
+        android:name="com.android.e_cooking.Langkah8Fragment"
+        android:label="Otah Melayu"
+        tools:layout="@layout/fragment_langkah8" />
+    <fragment
+        android:id="@+id/Langkah6Fragment"
+        android:name="com.android.e_cooking.Langkah6Fragment"
+        android:label="Gulai Asam Pedas Melayu"
+        tools:layout="@layout/fragment_langkah6" />
+    <fragment
+        android:id="@+id/resep2Fragment"
+        android:name="com.android.e_cooking.Resep2Fragment"
+        android:label="Asam Pedas Patin Khas Melayu Riau"
+        tools:layout="@layout/fragment_resep2" >
+        <action
+            android:id="@+id/action_resep2Fragment_to_Langkah2Fragment"
+            app:destination="@id/Langkah2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep3Fragment"
+        android:name="com.android.e_cooking.Resep3Fragment"
+        android:label="Mie Sagu Goreng"
+        tools:layout="@layout/fragment_resep3" >
+        <action
+            android:id="@+id/action_resep3Fragment_to_Langkah3Fragment"
+            app:destination="@id/Langkah3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep4Fragment"
+        android:name="com.android.e_cooking.Resep4Fragment"
+        android:label="Tempoyak Ikan Patin"
+        tools:layout="@layout/fragment_resep4" >
+        <action
+            android:id="@+id/action_resep4Fragment_to_Langkah4Fragment"
+            app:destination="@id/Langkah4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/halaman2Fragment"
+        android:name="com.android.e_cooking.Halaman2Fragment"
+        android:label="Halaman 2"
+        tools:layout="@layout/fragment_halaman2" >
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep5Fragment"
+            app:destination="@id/resep5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep6Fragment"
+            app:destination="@id/resep6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep7Fragment2"
+            app:destination="@id/resep7Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep8Fragment2"
+            app:destination="@id/resep8Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_halaman2Fragment_to_halaman3Fragment"
+            app:destination="@id/halaman3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep5Fragment"
+        android:name="com.android.e_cooking.Resep5Fragment"
+        android:label="Pulut Durian Jadul Melayu"
+        tools:layout="@layout/fragment_resep5" >
+        <action
+            android:id="@+id/action_resep5Fragment_to_Langkah5Fragment"
+            app:destination="@id/Langkah5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep6Fragment"
+        android:name="com.android.e_cooking.Resep6Fragment"
+        android:label="Gulai Asam Pedas Melayu"
+        tools:layout="@layout/fragment_resep6" >
+        <action
+            android:id="@+id/action_resep6Fragment_to_Langkah6Fragment"
+            app:destination="@id/Langkah6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep7Fragment"
+        android:name="com.android.e_cooking.Resep7Fragment"
+        android:label="Mie Lendir Khas Melayu"
+        tools:layout="@layout/fragment_resep7" >
+        <action
+            android:id="@+id/action_resep7Fragment_to_Langkah7Fragment"
+            app:destination="@id/Langkah7Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep8Fragment"
+        android:name="com.android.e_cooking.Resep8Fragment"
+        android:label="Otah Melayu"
+        tools:layout="@layout/fragment_resep8" >
+        <action
+            android:id="@+id/action_resep8Fragment_to_Langkah8Fragment"
+            app:destination="@id/Langkah8Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halaman3Fragment"
+        android:name="com.android.e_cooking.Halaman3Fragment"
+        android:label="Halaman 3"
+        tools:layout="@layout/fragment_halaman3" >
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep5Fragment"
+            app:destination="@id/resep5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep6Fragment"
+            app:destination="@id/resep6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep7Fragment2"
+            app:destination="@id/resep7Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep8Fragment2"
+            app:destination="@id/resep8Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman3Fragment_to_halaman2Fragment"
+            app:destination="@id/halaman2Fragment" />
+        <action
+            android:id="@+id/action_halaman3Fragment_to_resep9Fragment"
+            app:destination="@id/resep9Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman3Fragment_to_resep10Fragment"
+            app:destination="@id/resep10Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman3Fragment_to_resep11Fragment"
+            app:destination="@id/resep11Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman3Fragment_to_resep12Fragment"
+            app:destination="@id/resep12Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman3Fragment_to_halaman4Fragment"
+            app:destination="@id/halaman4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep9Fragment"
+        android:name="com.android.e_cooking.Resep9Fragment"
+        android:label="Nasi Lemak"
+        tools:layout="@layout/fragment_resep9" >
+        <action
+            android:id="@+id/action_resep9Fragment_to_Langkah9Fragment"
+            app:destination="@id/Langkah9Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep10Fragment"
+        android:name="com.android.e_cooking.Resep10Fragment"
+        android:label="Gulai Ayam Kuning"
+        tools:layout="@layout/fragment_resep10" >
+        <action
+            android:id="@+id/action_resep10Fragment_to_Langkah10Fragment"
+            app:destination="@id/Langkah10Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep11Fragment"
+        android:name="com.android.e_cooking.Resep11Fragment"
+        android:label="Nasi Goreng Rendang"
+        tools:layout="@layout/fragment_resep11" >
+        <action
+            android:id="@+id/action_resep11Fragment_to_Langkah11Fragment"
+            app:destination="@id/Langkah11Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep12Fragment"
+        android:name="com.android.e_cooking.Resep12Fragment"
+        android:label="Miso"
+        tools:layout="@layout/fragment_resep12" >
+        <action
+            android:id="@+id/action_resep12Fragment_to_Langkah12Fragment"
+            app:destination="@id/Langkah12Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah9Fragment"
+        android:name="com.android.e_cooking.Langkah9Fragment"
+        android:label="Nasi Lemak"
+        tools:layout="@layout/fragment_langkah9" />
+    <fragment
+        android:id="@+id/Langkah10Fragment"
+        android:name="com.android.e_cooking.Langkah10Fragment"
+        android:label="Gulai Ayam Kuning"
+        tools:layout="@layout/fragment_langkah10" />
+    <fragment
+        android:id="@+id/Langkah11Fragment"
+        android:name="com.android.e_cooking.Langkah11Fragment"
+        android:label="Nasi Goreng Rendang"
+        tools:layout="@layout/fragment_langkah11" />
+    <fragment
+        android:id="@+id/Langkah12Fragment"
+        android:name="com.android.e_cooking.Langkah12Fragment"
+        android:label="Miso"
+        tools:layout="@layout/fragment_langkah12" />
+    <fragment
+        android:id="@+id/halaman4Fragment"
+        android:name="com.android.e_cooking.Halaman4Fragment"
+        android:label="Halaman 4"
+        tools:layout="@layout/fragment_halaman4" >
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep5Fragment"
+            app:destination="@id/resep5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep6Fragment"
+            app:destination="@id/resep6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep7Fragment2"
+            app:destination="@id/resep7Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman2Fragment_to_resep8Fragment2"
+            app:destination="@id/resep8Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_halaman4Fragment_to_halaman3Fragment"
+            app:destination="@id/halaman3Fragment" />
+        <action
+            android:id="@+id/action_halaman4Fragment_to_resep13Fragment"
+            app:destination="@id/resep13Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman4Fragment_to_resep14Fragment"
+            app:destination="@id/resep14Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman4Fragment_to_resep15Fragment"
+            app:destination="@id/resep15Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman4Fragment_to_resep16Fragment"
+            app:destination="@id/resep16Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman4Fragment_to_halaman5Fragment"
+            app:destination="@id/halaman5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep13Fragment"
+        android:name="com.android.e_cooking.Resep13Fragment"
+        android:label="Roti Jala Kari Ayam"
+        tools:layout="@layout/fragment_resep13" >
+        <action
+            android:id="@+id/action_resep13Fragment_to_Langkah13Fragment"
+            app:destination="@id/Langkah13Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep14Fragment"
+        android:name="com.android.e_cooking.Resep14Fragment"
+        android:label="Lempeng Sagu"
+        tools:layout="@layout/fragment_resep14" >
+        <action
+            android:id="@+id/action_resep14Fragment_to_Langkah14Fragment"
+            app:destination="@id/Langkah14Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep15Fragment"
+        android:name="com.android.e_cooking.Resep15Fragment"
+        android:label="Nasi Goreng Kerabu"
+        tools:layout="@layout/fragment_resep15" >
+        <action
+            android:id="@+id/action_resep15Fragment_to_Langkah15Fragment"
+            app:destination="@id/Langkah15Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep16Fragment"
+        android:name="com.android.e_cooking.Resep16Fragment"
+        android:label="Pacri Nanas Khas Melayu"
+        tools:layout="@layout/fragment_resep16" >
+        <action
+            android:id="@+id/action_resep16Fragment_to_Langkah16Fragment"
+            app:destination="@id/Langkah16Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep17Fragment"
+        android:name="com.android.e_cooking.Resep17Fragment"
+        android:label="Udang Nestum Batam"
+        tools:layout="@layout/fragment_resep17" >
+        <action
+            android:id="@+id/action_resep17Fragment_to_Langkah17Fragment"
+            app:destination="@id/Langkah17Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep18Fragment"
+        android:name="com.android.e_cooking.Resep18Fragment"
+        android:label="Lakse Kuah Kari Ikan Khas Melayu"
+        tools:layout="@layout/fragment_resep18" >
+        <action
+            android:id="@+id/action_resep18Fragment_to_Langkah18Fragment"
+            app:destination="@id/Langkah18Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep19Fragment"
+        android:name="com.android.e_cooking.Resep19Fragment"
+        android:label="Ikan Salai Tamban Masak Asam Khas Melayu"
+        tools:layout="@layout/fragment_resep19" >
+        <action
+            android:id="@+id/action_resep19Fragment_to_Langkah19Fragment"
+            app:destination="@id/Langkah19Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resep20Fragment"
+        android:name="com.android.e_cooking.Resep20Fragment"
+        android:label="Cumi Minyak Hitam Khas Melayu"
+        tools:layout="@layout/fragment_resep20" >
+        <action
+            android:id="@+id/action_resep20Fragment_to_Langkah20Fragment"
+            app:destination="@id/Langkah20Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah13Fragment"
+        android:name="com.android.e_cooking.Langkah13Fragment"
+        android:label="Roti Jala Kari Ayam"
+        tools:layout="@layout/fragment_langkah13" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah14Fragment"
+        android:name="com.android.e_cooking.Langkah14Fragment"
+        android:label="Lempeng Sagu"
+        tools:layout="@layout/fragment_langkah14" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah15Fragment"
+        android:name="com.android.e_cooking.Langkah15Fragment"
+        android:label="Nasi Goreng Kerabu"
+        tools:layout="@layout/fragment_langkah15" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah16Fragment"
+        android:name="com.android.e_cooking.Langkah16Fragment"
+        android:label="Pacri Nanas Khas Melayu"
+        tools:layout="@layout/fragment_langkah16" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah17Fragment"
+        android:name="com.android.e_cooking.Langkah17Fragment"
+        android:label="Roti Jala Kari Ayam"
+        tools:layout="@layout/fragment_langkah17" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah18Fragment"
+        android:name="com.android.e_cooking.Langkah18Fragment"
+        android:label="Lakse Kuah Kari Ikan Khas Melayu"
+        tools:layout="@layout/fragment_langkah18" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah19Fragment"
+        android:name="com.android.e_cooking.Langkah19Fragment"
+        android:label="Ikan Salai Tamban Masak Asam Khas Melayu"
+        tools:layout="@layout/fragment_langkah19" >
+    </fragment>
+    <fragment
+        android:id="@+id/Langkah20Fragment"
+        android:name="com.android.e_cooking.Langkah20Fragment"
+        android:label="Cumi Minyak Hitam Khas Melayu"
+        tools:layout="@layout/fragment_langkah20" >
+    </fragment>
+    <fragment
+        android:id="@+id/halaman5Fragment"
+        android:name="com.android.e_cooking.Halaman5Fragment"
+        android:label="Halaman 5"
+        tools:layout="@layout/fragment_halaman5" >
+        <action
+            android:id="@+id/action_halaman5Fragment_to_halaman4Fragment"
+            app:destination="@id/halaman4Fragment" />
+        <action
+            android:id="@+id/action_halaman5Fragment_to_resep17Fragment"
+            app:destination="@id/resep17Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman5Fragment_to_resep18Fragment"
+            app:destination="@id/resep18Fragment" />
+        <action
+            android:id="@+id/action_halaman5Fragment_to_resep19Fragment"
+            app:destination="@id/resep19Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_halaman5Fragment_to_resep20Fragment"
+            app:destination="@id/resep20Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>
